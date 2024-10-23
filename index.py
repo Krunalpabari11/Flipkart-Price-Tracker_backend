@@ -12,7 +12,7 @@ import re
 import time
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app)
 
 # MongoDB connection
 client = MongoClient('mongodb+srv://krunalpabari11:jghhPRrUoOickS49@cluster0.blsuc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
